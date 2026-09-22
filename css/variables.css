@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    /* Colors */
+    --primary-color: #18406e;
+    --secondary-color: #7237E1;
+    --background-color: rgba(231, 231, 231, 0.5);
+    --text-color: #161C2D;
+    --text-color-hover: #5e70a7;
+
+    /* Font */
+    --font-main: 'Rubik', sans-serif;
+    --font-size-base: 16px;
+    
+    /* Spaces */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+
+    --border-radius: 0.5rem;
+}

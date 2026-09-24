@@ -1,0 +1,9 @@
+/* Tablets and small devices views */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction:column;
+    }
+    .nav-list {
+        flex-direction:column;
+    }
+}

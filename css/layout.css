@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site-header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-sm);
+    background-color: var(--background-color);
+    backdrop-filter: blur(5px);
+    font-family: var(--font-main);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.site-logo {
+    width: 150px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-list a {
+    font-size: var(--font-size-base);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color linear .2s;
+}
+.nav-list a:hover {
+    color: var(--text-color-hover);
+}

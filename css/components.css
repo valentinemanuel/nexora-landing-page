@@ -8,6 +8,9 @@
 
 /* Choosed a Scroll Driven Animation from https://scroll-driven-animations.style/demos/stacking-cards/css/ */
 .card {
+    position: sticky;
+    top: 100px;
+    padding-top: calc(var(--index) * 1rem);
 	--index0: calc(var(--index) - 1); /* 0-based index */
 	--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
 	--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
@@ -21,15 +24,36 @@
 }
 
 #cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: var(--font-main);
 	--numcards: 4;
 	view-timeline-name: --cards-element-scrolls-in-body;
 }
 
-.card__content {
+.card-content {
+    padding: 2.5rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: var(--border-radius);
+
+    /* Obliga a la tarjeta a encogerse hacia el borde superior */
+    transform-origin: top center; 
+    
 	--start-range: calc(var(--index0) / var(--numcards) * 100%);
 	--end-range: calc((var(--index)) / var(--numcards) * 100%);
 
 	animation: linear scale forwards;
 	animation-timeline: --cards-element-scrolls-in-body;
 	animation-range: exit-crossing var(--start-range) exit-crossing var(--end-range);
+
+
+    height: 40vh; 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 1rem;
 }

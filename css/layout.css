@@ -101,3 +101,51 @@ body {
     width: 300px;
     height: auto;
 }
+/* --------------- SERVICES --------------- */
+.card-content h3 {
+    flex: 0 0 30%;
+}
+.card-content details {
+    flex: 1;
+}
+.card-content summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none; 
+}
+.card-content summary::-webkit-details-marker {
+    display: none;
+}
+.card-content details p {
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 1.5rem;                             
+    border-radius: var(--border-radius);                         
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+}
+.card-content i {
+    display: flex;     
+    align-items: center;   
+    gap: 0.75rem;          
+    font-size: 1.2rem;     
+    color: rgba(255, 255, 255, 0.7);
+}
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card-content details[open] p {
+    animation: aparecerSuave 0.4s ease-out forwards;
+}

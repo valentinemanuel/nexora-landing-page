@@ -7,7 +7,12 @@
 body {
     background-color: var(--background-color);
 }
+html {
+    scroll-behavior: smooth;
 
+    /* this is for stopping some px before the section */
+    scroll-padding-top: 80px; 
+}
 /* --------------- CONTAINER PAGINA ---------------*/
 .container {
     max-width: 1200px; 
@@ -95,6 +100,7 @@ body {
 .btn:hover {
     color: var(--background-color);
     background-color: var(--secondary-color);
+    transform: translateX(8px);
     color: #ffff;
 }
 .nexora-mascota {
@@ -194,7 +200,7 @@ body {
 /*--------------- ABOUT --------------- */
 #about {
     padding: 5rem 0;
-    background-color: var(--section-bg);
+    background-color: var(--background-color);
     font-family: var(--font-main);
 }
 .about-header {
@@ -287,7 +293,7 @@ body {
 /*--------------- CONTACT ---------------*/
 #contact {
     padding: 5rem 0;
-    background-color: var(--white);
+    background-color: var(--background-color);
     display: flex;
     justify-content: center; 
 }

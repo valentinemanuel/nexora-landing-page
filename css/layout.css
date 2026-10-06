@@ -191,3 +191,95 @@ body {
     color: var(--paragraphs-color);
     line-height: 1.5;
 }
+/*--------------- ABOUT --------------- */
+#about {
+    padding: 5rem 0;
+    background-color: var(--section-bg);
+    font-family: var(--font-main);
+}
+.about-header {
+    max-width: 800px;
+    margin: 0 auto 3.5rem auto;
+    text-align: center;
+}
+.about-header h2 {
+    font-size: 2.25rem;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-md);
+}
+.about-header .lead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+}
+.about-header p {
+    color: var(--paragraphs-color);
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* --- Stats --- */
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2.5rem 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+}
+.stat-item {
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+}
+.stat-item h3 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin: 0;
+    color: var(--accent-color);
+}
+.stat-item p {
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* --- Pilares / Valores --- */
+.about-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+.pillar-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--secondary-color);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.pillar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+}
+.pillar-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+}
+.pillar-card p {
+    color: var(--paragraphs-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}

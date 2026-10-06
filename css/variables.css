@@ -3,10 +3,13 @@
     /* Colors */
     --primary-color: #1f4d81;
     --secondary-color: #7237E1;
+    --accent-color: #38bdf8;
     --paragraphs-color: #4a5568;
     --background-color: rgba(231, 231, 231, 0.5);
+    --section-bg: #f8fafc;
     --text-color: #161C2D;
     --text-color-hover: #5e70a7;
+    --white: #ffffff;
 
     /* Font */
     --font-main: 'Rubik', sans-serif;
@@ -17,5 +20,7 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
 
+    /* UI Elements */
     --border-radius: 0.5rem;
+    --transition-base: 0.3s ease;
 }

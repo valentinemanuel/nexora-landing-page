@@ -1,6 +1,6 @@
 # Nexora Landing Page
 
-A fictional static landing page called Nexora, a fictional company that offers software and technology services.
+A fictional static landing page called Nexora, a company that offers software and technology services.
 
 ## About
 
